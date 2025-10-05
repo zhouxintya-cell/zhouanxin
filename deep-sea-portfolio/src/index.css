@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: only light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply min-h-screen bg-transparent font-body text-abyss-blue antialiased transition-colors duration-700 ease-out dark:bg-midnight-blue dark:text-sunlit-water;
+  margin: 0;
+}
+
+#root {
+  @apply min-h-screen;
+}
+
+::selection {
+  background: rgba(62, 230, 255, 0.45);
+  color: #020c1b;
+}
